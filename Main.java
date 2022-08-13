@@ -11,9 +11,6 @@ package Atividade_12_08;
 public class Main {
     public static void main(String[] args) {
 
-
-
-    ListaDinamica lista = new ListaDinamica();
     FilaDinamica fila = new FilaDinamica();
     PilhaDinamica pilha = new PilhaDinamica();
 
@@ -21,7 +18,15 @@ public class Main {
     Pessoa p2 = new Pessoa("Maria","Medica");
     Pessoa p3 = new Pessoa("Jacques","Professor");
 
+
+    fila.inserir(new No(p1));
+    fila.inserir(new No(p2));
+    fila.inserir(new No(p3));
     
+    fila.exibir();
+    fila.remover();
+    fila.exibir();
+
     pilha.empilha(new No(p1));
     pilha.empilha(new No(p2));
     pilha.empilha(new No(p3));
